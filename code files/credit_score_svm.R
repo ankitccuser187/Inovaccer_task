@@ -4,7 +4,7 @@ library(e1071)
 library(graphics)
 library(ggplot2)
 library(caret)
-library(ROCR)
+
 
 #transfer the control to data cleaning script for data loading and preprocessing
 source('~/Rstudio Scripts/credit score/credit_analysis/data_cleaning.r')
