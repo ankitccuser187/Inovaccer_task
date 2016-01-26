@@ -1,5 +1,6 @@
 mising_value<-function(data){
-  
+
+#calculate frequenty of each element    
 trt<-data.frame(table(data))
 
 #remove missing values from vector
