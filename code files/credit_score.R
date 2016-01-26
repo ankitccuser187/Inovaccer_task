@@ -18,7 +18,7 @@ f <- as.formula(paste("A16 ~", paste(n[!n %in% "A16"], collapse = " + ")))
 nn<-neuralnet(f,data = train,linear.output = FALSE,err.fct = "ce",
               algorithm = "rprop+",learningrate = 0.3,stepmax =5e6,
               threshold = 0.01,lifesign = "FULL",lifesign.step = 100,hidden = c(4),
-              rep = 5)
+              rep = 2)
 
 plot(nn)
 

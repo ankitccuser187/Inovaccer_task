@@ -62,6 +62,14 @@ data_t[,14]<-(data_t[,14]-min(data_t[,14]))/(max(data_t[,14])-min(data_t[,14]))
 data_t[,15]<-(data_t[,15]-min(data_t[,15]))/(max(data_t[,15])-min(data_t[,15]))
 
 
+#converting the target variable in binary output format for neuralnet
+for(i in 1:nrow(data_t)){
+  
+  if(data_t$A16[i]==1)
+    data_t$A16[i]<-0
+  if(data_t$A16[i]==2)
+    data_t$A16[i]<-1
+}
 
 
 
